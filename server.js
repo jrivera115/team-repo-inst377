@@ -42,6 +42,7 @@ app.use(express.static('public'));
 // this is, right now, an introduction to Callback Hell
 // but it is okay for a first-level example
 app.get('/api', (req, res) => {
+  //not sure if this is the right way to get end point
   const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
   fetch(baseURL)
   //fix these:

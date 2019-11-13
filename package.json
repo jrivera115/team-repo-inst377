@@ -8,18 +8,25 @@
         "start": "node server.js"
     },
     "author": "Jonah Rivera",
+    "license": "CC-BY-SA-4.0",
     "dependencies": {
         "express": "^4.17.1",
         "node-fetch": "^2.6.0"
     },
-    "engines":{
-        "node":"0.12.7"
+    "engines": {
+        "node": "0.12.7"
     },
-    "repository":{
+    "repository": {
         "type": "git",
         "url": "https://github.com/jrivera115/team-repo-inst377"
     },
-    "keywords":[
+    "devDependencies": {
+        "eslint": "^6.5.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-html": "^6.0.0",
+        "eslint-plugin-import": "^2.18.2"
+    },
+    "keywords": [
         "node",
         "heroku",
         "express",
