@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -51,6 +51,7 @@ app.get('/api', (req, res) => {
     .then((r) => r.map((course) => course.course_id + ": " + course.name))
     .then((data) => {
       console.log(data);
+      // res.render(index_1.html);
       res.send({ data: data });
     })
     .catch((err) => {
@@ -59,4 +60,4 @@ app.get('/api', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Our app is running on https://safetyzone-demo.herokuapp.com/ and port: ${port}!`));
