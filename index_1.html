@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>
+    </div>
+    <div class="header-image">
+        <div class="header-text">
+          <h1>I am John Doe</h1>
+          <p>And I'm a Photographer</p>
+          <button>Hire me</button>
+        </div>
+    </div>
+    <script>
+      function changePlaceholder(){
+        var data = document.getElementById("search");
+        if (data.placeholder === "e.g. College Park"){
+          data.placeholder = "e.g. 20740";
+
+        } else {
+          data.placeholder = "e.g. College Park";
+          
+        }
+        console.log(data);
+        return data;
+        
+      }
+    </script>
+  </body>
+</html>
