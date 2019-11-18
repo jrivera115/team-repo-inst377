@@ -3,13 +3,21 @@ A repository for INST 377 team project.
 
 README (top part of your README.md)
 
-Title of your project
-Description of your project
-Link to the Heroku, Netlify, or Digital Ocean instance where your application can be used
-Description of target browsers (iOS? Android? Which ones?)
-Link to User Manual
-Link to Developer Manual
-Developer Manual (bottom half of your README.md)
+Safety Zone 
+
+Description of Project: Our application is based off of food facilities 
+
+
+Link to the Heroku, Netlify, or Digital Ocean instance where your application can be used:
+
+
+Description of target browsers (iOS? Android? Which ones?):
+
+Link to User Manual:
+
+Link to Developer Manual:
+
+Developer Manual (bottom half of your README.md):
 
 The audience of this document is future developers who will take over your system.
 They know technical terms and have general knowledge about web applications, but do not have knowledge about your system design.
