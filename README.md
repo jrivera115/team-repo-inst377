@@ -15,6 +15,7 @@ In hopes to inform these individuals, our application, Safety Zone, will bring a
 <Description of target browsers (iOS? Android? Which ones?)>
 
 <Link to User Manual>
+https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md
 
 <Link to Developer Manual>
 
