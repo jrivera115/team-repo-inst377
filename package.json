@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
     "package.json": "^2.0.1"
   },
   "devDependencies": {},
