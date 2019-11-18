@@ -1,35 +1,33 @@
 {
-    "name": "safety_zone",
-    "version": "1.0.0",
-    "description": "A webserver to pull data from the Prince George's County Open Data and host it on Heroku as a web page project.",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \" Error: no test specified\" && exit 1",
-        "start": "node server.js"
-    },
-    "author": "Jonah Rivera",
-    "license": "CC-BY-SA-4.0",
-    "dependencies": {
-        "express": "^4.17.1",
-        "node-fetch": "^2.6.0"
-    },
-    "engines": {
-        "node": "0.12.7"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jrivera115/team-repo-inst377"
-    },
-    "devDependencies": {
-        "eslint": "^6.5.1",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-plugin-html": "^6.0.0",
-        "eslint-plugin-import": "^2.18.2"
-    },
-    "keywords": [
-        "node",
-        "heroku",
-        "express",
-        "static"
-    ]
+  "name": "team-repo-inst377",
+  "version": "1.0.0",
+  "description": "Final project for INST 377: Dynamic Web Application class",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "package.json": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrivera115/team-repo-inst377.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Team 22",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/jrivera115/team-repo-inst377/issues"
+  },
+  "homepage": "https://github.com/jrivera115/team-repo-inst377#readme"
 }
