@@ -1,6 +1,9 @@
 Title: Safety Zone
+
 Team Members: Jonah Rivera, Nathan Kwon, Muhammad Jansen, Matthew Tung, Ebada Mun, Yineng Xia
+
 Link to app: 
+
 Information Problem: When people decide to go to foodservice facilities to eat food, often they are unaware of potential health concerns regarding the food that is served there. Because of this, there have been cases of mass food poisoning from various food service facilities, as the food they eat has been contaminated at some point. Thus, it is important to find a method to inform people of the results of facility inspections, so that they can make a decision of what to eat while considering previous inspection results and the reasons behind the findings of violations. While customers can search for this information online, it can be somewhat difficult, especially for lesser-known food service facilities, as the information in question is often difficult to access. Because of this, there is a need for a method to quickly lookup past inspections of food service facilities done by the government, and whether or not the foodservice facility has been approved as a safe place to eat.
 
 Identified stakeholders:
