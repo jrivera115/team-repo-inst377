@@ -52,6 +52,7 @@ app.get('/', (req, res) => { // it might not be /api
     // .then((r) => r.map((course) => course.course_id + ": " + course.name))
     .then((data) => {
       console.log(data);
+      // res.render('index_1.html')
       res.send({ data: data });
     })
     .catch((err) => {
