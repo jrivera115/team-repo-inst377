@@ -1,6 +1,5 @@
 # team-repo-inst377
 A repository for INST 377 team project. 
-<<<<<<< Updated upstream
 =======
 
 README (top part of your README.md)
@@ -52,4 +51,3 @@ and keep working on the system development after you leave the team.>
 <The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do>
 
 <A clear set of expectations around known bugs and a road-map for future development.>
->>>>>>> Stashed changes
