@@ -48,6 +48,7 @@ app.get('/', (req, res) => { // it might not be /api
   fetch(baseURL)
   // fix these:
     .then((r) => r.json())
+    .then((r) => JSON.stringify(r))
     // .then((r) => r.filter((course) => course.dept_id === 'INST'))
     // .then((r) => r.map((course) => course.course_id + ": " + course.name))
     .then((data) => {
