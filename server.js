@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
   //fix these:
     .then((r) => r.json())
     // .then((r) => r.filter((course) => course.dept_id === 'INST'))
-    // .then((r) => r.map((course) => course.course_id + ": " + course.name))
+    .then((r) => r.map((dataset) => dataset.name))
     .then((data) => {
       console.log(data);
       // res.render(index_1.html);
