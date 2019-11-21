@@ -37,6 +37,29 @@
         return data;
         
       }
+      function loadData() {
+      console.log('fetch'); // confirm code is running on click
+      fetch('/api')
+        .then(res => res.json())
+        .then(res => res.data.map(c => c))
+        .then(res => {
+          myList(res);
+          console.log(res); // logging step to check what we got
+          return res;
+        });
+      }
+      function myList(res){
+        let ol = document.createElement("ol");
+
+        for(let i = 0; i < res.length; i ++){
+          
+          let el = document.createElement("li");
+          el.innerHTML = res[i];
+          ol.appendChild(el);
+
+        }
+        document.querySelector('.content_test').appendChild(ol);
+      }
     </script>
   </body>
 </html>
