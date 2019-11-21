@@ -41,13 +41,11 @@ app.use(express.static('public'));
 // the simplest format is not necessarily the best one.
 // this is, right now, an introduction to Callback Hell
 // but it is okay for a first-level example
-app.get('/', (req, res) => {
-  //not sure if this is the right way to get end point
+app.get('/api', (req, res) => {
   const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
   fetch(baseURL)
-  //fix these:
     .then((r) => r.json())
-    .then((r) => r.map((dataset) => dataset))
+    .then((r) => r.map((dataset) => dataset.name))
     .then((data) => {
       console.log(data);
       res.send({ data: data });
