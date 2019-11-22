@@ -54,6 +54,10 @@ section {
   transform: translate(-50%, -50%);
   color: white;
 }
+/* leaflet map container height */
+#mapid { 
+  height: 180px; 
+}
 
 .navigation {
 margin: 0;
