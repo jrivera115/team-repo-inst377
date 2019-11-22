@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \" Error: no test specified\" && exit 1",
         "start": "node server.js",
-        "prod": "npm install && npm start" },
+        "prod": "npm install && npm start"
+    },
     "author": "Jonah Rivera",
     "license": "CC-BY-SA-4.0",
     "dependencies": {
