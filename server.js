@@ -47,8 +47,6 @@ app.get('/api', (req, res) => {
   fetch(baseURL)
   //fix these:
     .then((r) => r.json())
-    .then((r) => r.filter((course) => course.dept_id === 'INST'))
-    .then((r) => r.map((course) => course.course_id + ": " + course.name))
     .then((data) => {
       console.log(data);
       // res.render(index_1.html);

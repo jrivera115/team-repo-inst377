@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Safety Zone Results</title>
-    </head>
-    <div class = "header">
-        <h1>Safety Zone</h1>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+  </head>
+<body>
+    <div class="navigation">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.asp">Result</a></li>
+          <li><a href="contact.asp">Search</a></li>
+          <li><a href="contact.asp">Search</a></li>
+          <li><a href="about.asp">About Us</a></li>
+        </ul>
     </div>
-    <body>
-        <div class = "map">
-        <!-- Put map here-->
-        </div>
 
-        <div class = "list">
-            <!--Code for food service facility details output here-->
-        </div>
-        <div class = "results">
-            <!--Code for outputting results of food service facility inspection here-->
-        </div>
-        
-    </body>
-    <div class = "footer">
-        <p>Footer<p>
+    <div class="map">
+        <!-- link to leaflet code -->
+         <div id="mapid"></div>
     </div>
+
+    <div >
+        <!-- list of food places -->
+    </div>
+
+    <div>
+        <!-- results of food inspection -->
+    </div>
+
+</body>
 </html>
