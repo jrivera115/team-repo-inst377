@@ -1,14 +1,82 @@
 body {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant.jpeg");
-  
-    /* Set a specific height */
-    height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+  background: #ccc;
+}
 
+.aboutheader {
+  background-color: green;
+}
+
+/* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
+
+p {
+  text-align: center;
+  position: relative;
+  /* top: 10px; */
+  font-size: 12.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  width: 80%;
+  height: 200px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.boxdescription {
+  width: 10%;
+  height: 100px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.description {
+  background-color: white;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+/* asdfasfd */
+
+.image1 {
+  background-color: grey;
+}
+
+.image2 {
+  background-color: yellow;
+}
+
+.image3 {
+  background-color: blue;
+}
+
+/* Navigation template taken from Muhammad's Index CSS */
+
+.navigation {
+  margin: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+}
