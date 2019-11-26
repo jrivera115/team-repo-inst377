@@ -1,55 +1,56 @@
-.title {
-  text-align: center;
-  width: 100%;
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 100px;
-  color: #ffffff;
-  text-shadow: 5px 5px 4px #000000;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   background: #ccc;
 }
 
-.aboutheader {
+.documentationheader {
   background-color: green;
-  text-align: center;
 }
 
 /* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
 
-body {
-  background: #ccc;
-}
-
-.infoprob h3 {
+p {
   text-align: center;
   position: relative;
-  top: 20px;
-}
-
-.solution h3 {
-  text-align: center;
-  position: relative;
-  top: 20px;
+  /* top: 10px; */
+  font-size: 12.5px;
+  font-family: "Poppins", sans-serif;
 }
 
 .box {
-  width: 90%;
+  width: 80%;
   height: 200px;
   background: #fff;
   margin: 40px auto;
-  padding: 15px;
+  padding: 20px;
 }
 
-.effect {
+.boxdescription {
+  width: 10%;
+  height: 100px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.description {
+  background-color: white;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
+}
+
+/* asdfasfd */
+
+.image1 {
+  background-color: grey;
+}
+
+.image2 {
+  background-color: yellow;
+}
+
+.image3 {
+  background-color: blue;
 }
 
 /* Navigation template taken from Muhammad's Index CSS */
