@@ -11,20 +11,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background: #ccc;
+.aboutheader {
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
-.aboutheader {
-  background-color: green;
-  text-align: center;
+body {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant1.jpeg");
 }
 
 /* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
-
-body {
-  background: #ccc;
-}
 
 .infoprob h3 {
   text-align: center;
