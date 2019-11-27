@@ -7,7 +7,7 @@
   color: #ffffff;
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 150px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -24,7 +24,7 @@
 
 body {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("restaurant1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -39,7 +39,7 @@ body {
   font-size: 30px;
   text-align: center;
   margin-bottom: 100px;
-  color: #ffffff;
+  color: #fdfbfb;
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -53,7 +53,7 @@ body {
   font-size: 36px;
   text-align: center;
   margin-bottom: 100px;
-  color: #ffffff;
+  color: #fdfbfb;
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -62,15 +62,22 @@ body {
 .box {
   width: 90%;
   height: 200px;
-  background: #fff;
+  background: #fdfbfb;
   margin: 40px auto;
   padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
 }
 
 .effect {
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
+}
+
+p {
+  font-family: 'Poppins';
+  font-size: 12px;
 }
 
 /* Navigation template taken from Muhammad's Index CSS */
