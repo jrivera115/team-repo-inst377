@@ -8,18 +8,19 @@
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 150px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 .aboutheader {
   width: 100%;
-  font-size: 36px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 100px;
   color: #ffffff;
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 0px;
+  font-family: 'Poppins';
 }
 
 body {
@@ -36,13 +37,14 @@ body {
   position: relative;
   top: 20px;
   width: 100%;
-  font-size: 30px;
+  font-size: 36px;
   text-align: center;
   margin-bottom: 100px;
   color: #fdfbfb;
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .solutionheader h3 {
@@ -57,11 +59,22 @@ body {
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 0px;
+  font-family: 'Poppins';
 }
 
-.box {
+.box1 {
   width: 90%;
-  height: 200px;
+  height: 175px;
+  background: #fdfbfb;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.box2 {
+  width: 90%;
+  height: 155px;
   background: #fdfbfb;
   margin: 40px auto;
   padding: 15px;
@@ -77,7 +90,7 @@ body {
 
 p {
   font-family: 'Poppins';
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* Navigation template taken from Muhammad's Index CSS */
@@ -105,5 +118,5 @@ p {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 21px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
