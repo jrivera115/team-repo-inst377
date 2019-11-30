@@ -1,59 +1,67 @@
+/* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
+
+.title {
+  text-align: center;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 150px;
+  font-family: 'Poppins';
+}
+
 body {
-  background: #ccc;
+  background-color: blueviolet;
 }
 
 .documentationheader {
-  background-color: green;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-top: 0px;
+  font-family: 'Poppins';
 }
-
-/* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
 
 p {
   text-align: center;
   position: relative;
-  /* top: 10px; */
-  font-size: 12.5px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins';
+  font-size: 13px;
 }
 
-.box {
-  width: 80%;
-  height: 200px;
+.box1 {
+  width: 50%;
+  height: 250px;
   background: #fff;
-  margin: 40px auto;
-  padding: 20px;
+  float: right;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  margin-right: 40px;
 }
 
-.boxdescription {
-  width: 10%;
-  height: 100px;
-  background: #fff;
-  margin: 40px auto;
-  padding: 20px;
+#computer1 {
+  float: left;
+  margin-left: 40px;
 }
 
-.description {
-  background-color: white;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
+.separator {
+  display: inline-block;
+  margin-bottom: 500px;
 }
-
-/* asdfasfd */
 
 .image1 {
   background-color: grey;
+  display: inline-block;
 }
 
-.image2 {
-  background-color: yellow;
-}
-
-.image3 {
-  background-color: blue;
-}
-
-/* Navigation template taken from Muhammad's Index CSS */
+/* Navigation */
 
 .navigation {
   margin: 0;
