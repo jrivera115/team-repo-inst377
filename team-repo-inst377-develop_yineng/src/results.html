@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Safety Zone Results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="colorlib.com" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <style>
+    #map {
+      height: 180px;
+    }
+  </style>
+</head>
+<div class="header">
+  <h1>Safety Zone</h1>
+</div>
+
+<body>
+  <div class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.asp">Result</a></li>
+      <li><a href="about.asp">About Us</a></li>
+    </ul>
+  </div>
+  <div class="header">Safety Zone</div>
+  <button class="button" onclick="loadData()">Display Results</button>
+  <div class="content"></div>
+
+  <div id="map">
+    <!-- Put map here-->
+  </div>
+
+  <div id="list">
+    <!--Code for food service facility details output here-->
+    <script>
+      var resultDiv = document.getElementById("result");
+
+      var httpRequest;
+
+      function makeRequest(url) {
+
+        httpRequest = new XMLHttpRequest();
+
+        if (!httpRequest) {
+          alert('Giving up :( Cannot create an XMLHTTP instance');
+          return false;
+        }
+        httpRequest.onreadystatechange = getResult;
+
+        httpRequest.open('GET', url);
+
+        httpRequest.send();
+      }
+
+      function getResult() {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+          if (httpRequest.status === 200) {
+
+            var result = JSON.parse(httpRequest.responseText);
+
+            console.log(result);
+
+            //pull out the data 
+            var str = '';
+            var name = document.getElementById('name').value;
+            var category = document.getElementById('category').value;
+            var zip = document.getElementById('zip').value;
+            var arr = [];
+            for (var i = 0, len = result.length; i < len; i++) {
+              if (name != '') {
+                if (name == result[i].name && category == result[i].category && zip == result[i].zip) {
+                  str += '<tr><td>' + result[i].name + '</td><td>' + result[i].category + '</td><td>'
+                     + result[i].inspection_date + '</td><td>' + result[i].inspection_results + '</td><td>'
+                       + result[i].city + '</td><td>' + result[i].zip + '</td><td>' + result[i].address_line_1 + '</td><td>' 
+                        + result[i].address_line_2 + '</td><td>' + result[i].inspection_type + '</td></tr>';
+                }
+              } else {
+                str += '<tr><td>' + result[i].name + '</td><td>' + result[i].category + '</td><td>' 
+                  + result[i].inspection_date + '</td><td>' + result[i].inspection_results + '</td><td>'
+                     + result[i].city + '</td><td>' + result[i].zip + '</td><td>' + result[i].address_line_1 + '</td><td>' 
+                      + result[i].address_line_2 + '</td><td>' + result[i].inspection_type + '</td></tr>';
+              }
+
+            }
+            document.getElementById('result').innerHTML = str;
+
+
+          } else {
+            alert('There was a problem with the request.');
+          }
+        }
+      }
+
+      function search(s) {
+        if (s != 0) {
+          var name = document.getElementById('name').value;
+          var category = document.getElementById('category').value;
+          var zip = document.getElementById('zip').value;
+          if (name == '') {
+            alert('Name is required');
+            return;
+          }
+          if (category == '') {
+            alert('Category is required');
+            return;
+          }
+          if (zip == '') {
+            alert('Zip is required');
+            return;
+          }
+        }
+
+      }
+      </script>
+  </div>
+  <div class="results">
+    <!--Code for outputting results of food service facility inspection here-->
+
+  </div>
+  <script>
+      const mymap = L.map("map").setView([51.505, -0.09], 13);
+      const attribution =
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+  </script>
+</body>
+<div class="footer">
+  <p>Footer</p>
+  <p></p>
+</div>
+
+</html>
