@@ -14,14 +14,16 @@
 }
 
 body {
-  background-color: blueviolet;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("cup.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .documentationheader {
   width: 100%;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   color: #ffffff;
   text-shadow: 5px 5px 4px #000000;
   margin-top: 0px;
@@ -37,6 +39,33 @@ p {
 
 .box1 {
   width: 50%;
+  height: 120px;
+  background: #fff;
+  float: right;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  margin-right: 40px;
+  margin-bottom: 100px;
+  opacity: 0.9;
+}
+
+.box2 {
+  width: 50%;
+  height: 200px;
+  background: #fff;
+  float: right;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  margin-right: 40px;
+  margin-bottom: 100px;
+  opacity: 0.9;
+}
+
+ /* 
+ .box3 {
+  width: 50%;
   height: 250px;
   background: #fff;
   float: right;
@@ -44,22 +73,64 @@ p {
   border-radius: 20px;
   opacity: 0.9;
   margin-right: 40px;
+  margin-bottom: 100px;
+  opacity: 0.9;
 }
-
-#computer1 {
-  float: left;
-  margin-left: 40px;
-}
+*/
 
 .separator {
-  display: inline-block;
-  margin-bottom: 500px;
+  margin-top: 100px;
 }
 
-.image1 {
-  background-color: grey;
-  display: inline-block;
+.separator2 {
+  margin-top: 100px;
 }
+
+ /* 
+.separator3 {
+  margin-top: 100px;
+}
+*/
+
+#computer1 {
+  height: 280px;
+  width: 450px;
+  border-radius: 20px;
+}
+
+#computer2 {
+  height: 280px;
+  width: 450px;
+  border-radius: 20px;
+}
+
+ /* 
+#computer3 {
+  height: 280px;
+  width: 450px;
+  border-radius: 20px;
+}
+*/
+
+.image1 {
+  display: inline-block;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+
+.image2 {
+  display: inline-block;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+
+ /* 
+.image3 {
+  display: inline-block;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+*/
 
 /* Navigation */
 
