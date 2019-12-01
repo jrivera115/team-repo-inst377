@@ -11,11 +11,13 @@ user to input a Zip Code or City address. The input will be used to retrieve a c
 that are tagged with varying levels of food inspection compliance results. Then, these user will be able to filter the inspection results 
 through various categories.
 
-Our application has been built on Heroku, a cloud platform that enables developers to build, run, and operate applications.  https://safetyzone-demo.herokuapp.com/
+Our application has been built on Heroku, a cloud platform that enables developers to build, run, and operate applications.
+\https://safetyzone-demo.herokuapp.com/
 
 <Description of target browsers (iOS? Android? Which ones?)>
 Our application will mainly target iOS browsers... 
 
-User Manual:  https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md
+User Manual:
+\https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md
 
 Developer Manual:
