@@ -48,8 +48,9 @@ app.get('/api', (req, res) => {
   //fix these:
     .then((r) => r.json())
     //.then((r)=> JSON.stringify(r))
-    // .then((r) => r.filter((course) => course.dept_id === 'INST'))
-    .then((r) => r.map((dataset) => dataset.name))
+    //.then((r) => r.filter((dataset) => dataset.name === 'SUBWAY'))
+    //comment
+    .then((r) => r.map((dataset) => dataset))
     .then((data) => {
       //const newArr = data.map((dataset) => `${dataset.name} ${dataset.inspection_date} ${dataset.inspection_results}` );
       console.log(data);
