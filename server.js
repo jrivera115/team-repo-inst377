@@ -35,7 +35,7 @@ app.use(express.json());
  *  - Express: app.use()
  *    https://expressjs.com/en/4x/api.html#app.use
  */
-app.use(express.static('public'));
+app.use(express.static('src'));
 
 // this is a single route, in the simplest possible format
 // the simplest format is not necessarily the best one.
