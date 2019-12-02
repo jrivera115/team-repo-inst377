@@ -14,9 +14,7 @@
       <nav>
         <ul>
           <li><a href="search.html">Home</a></li>
-          <li><a href="#">Result</a></li>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">Search</a></li>
+          <li><a href="#">Documentation</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
       </nav>
@@ -29,7 +27,8 @@
         </div>
         <div class="inner-form">
           <div class="input-field second-wrap">
-            <input id="search" type="text" placeholder="e.g. College Park" > <!--use this input to filter the dataset-->
+            <form action = "/team-repo-inst377/src/js/main.js" onsubmit = "return data">
+              <input id="search" type="text" placeholder="e.g. College Park" > <!--use this input to filter the dataset-->
           </div>
           <div class="input-field third-wrap">
             <button class="btn-search" type="button" onclick="loadDataCity()"> <!--this line is not working when i use the loadOption()-->
@@ -49,60 +48,7 @@
       <p>answer is here</p>
     </div>
     <script>
-      function changePlaceholder(){
-        var data = document.getElementById("search");
-        if (data.placeholder === "e.g. College Park"){
-          data.placeholder = "e.g. 20740";
-        } else {
-          data.placeholder = "e.g. College Park";
-          
-        }
-        console.log(data);
-        return data;
-        
-      }
-      function loadOption(){
-        var data = document.getElementById("search");
-        if (data.placeholder === "e.g. College Park"){
-          loadDataCity();
-        } else {
-          loadDataZip();
-        }
-      }
-      function loadDataZip(){
-      console.log('fetch'); // confirm code is running on click
-      fetch('/api')
-        .then(res => res.json())
-        .then(res => res.data.filter(c => c.zip === 20740))
-        .then(res => res.map(c => c.name))
-        .then(res => {
-          myList(res);
-          console.log(res); // logging step to check what we got
-          return res;
-        });
-      }
-      function loadDataCity() {
-      console.log('fetch'); // confirm code is running on click
-      fetch('/api')
-        .then(res => res.json())
-        .then(res => res.data.filter(c => c.city === "COLLEGE PARK"))
-        .then(res => res.map(c => c.name))
-        .then(res => {
-          myList(res);
-          console.log(res); // logging step to check what we got
-          return res;
-        });
-      }
-      function myList(res){
-        let ol = document.createElement("ol");
-        for(let i = 0; i < res.length; i ++){
-          
-          let el = document.createElement("li");
-          el.innerHTML = res[i];
-          ol.appendChild(el);
-        }
-        document.querySelector('.content_test').appendChild(ol);
-      }
+      
     </script>
   </body>
 </html>
