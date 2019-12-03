@@ -215,6 +215,7 @@ input:checked + .slider:before {
   padding: 10px 32px;
   font-size: 16px;
   color: #555;
+  text-decoration-color: #ffffff;
 }
 
 .s003 form .inner-form .input-field input.placeholder {
@@ -251,11 +252,19 @@ input:checked + .slider:before {
   height: 100%;
   width: 100%;
   white-space: nowrap;
-  color: #fff;
-  border: 0;
+  color: #ffffff;
+  border: 3;
   cursor: pointer;
   background: #c9c9c9;
   transition: all .2s ease-out, color .2s ease-out;
+}
+
+.s003 form .inner-form .input-field.third-wrap .btn-search a{
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  outline-color: black;
+  font-weight: bold;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search svg {
@@ -267,9 +276,10 @@ input:checked + .slider:before {
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search:focus {
-  outline: 0;
+  outline: 3;
   box-shadow: none;
 }
+
 
 @media screen and (max-width: 992px) {
   .s003 form .inner-form .input-field {
@@ -359,10 +369,6 @@ input:checked + .slider:before {
   }
   .s003 form .inner-form .input-field.first-wrap .choices__inner {
     padding: 10px 15px;
-  }
-  .s003 form .inner-form .input-field.first-wrap .choices[data-type*="select-one"]:after {
-    right: 11.5px;
-    border-color: #e5e5e5 transparent transparent transparent;
   }
   .s003 form .inner-form .input-field.second-wrap {
     width: 100%;
