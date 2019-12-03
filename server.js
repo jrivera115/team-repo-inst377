@@ -45,7 +45,7 @@ app.get('/api', (req, res) => {
   const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
   fetch(baseURL)
     .then((r) => r.json())
-    .then((r) => r.map((dataset) => dataset.name))
+    .then((r) => r.map((dataset) => dataset))
     .then((data) => {
       console.log(data);
       res.send({ data: data });

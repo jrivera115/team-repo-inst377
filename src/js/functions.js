@@ -15,16 +15,17 @@ function makeRequest(url) {
 function getResult() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
-            var result = JSON.parse(httpRequest.responseText);
-            console.log(result);
+            var result = JSON.parse(httpRequest.responseText); // asking website to give him the dataset & put into json obj
+            console.log(result); //log out the data
             //pull out the data 
             var str = '';
-            var name = document.getElementById('name').value;
+            var name = document.getElementById('name').value; // id tag of an element <div id = whatever
             var category = document.getElementById('category').value;
             var zip = document.getElementById('zip').value;
             var arr = [];
+            // loop in the data
             for (var i = 0, len = result.length; i < len; i++) {
-                if (name != '') {
+                if (name != '') { // if the name is not blank
                     if (name == result[i].name && category == result[i].category && zip == result[i].zip) {
                         str += '<tr><td>' + result[i].name + '</td><td>' + result[i].category + '</td><td>' + result[i].inspection_date + '</td><td>' + result[i].inspection_results + '</td><td>'+ result[i].city + '</td><td>' + result[i].zip + '</td><td>' + result[i].address_line_1 + '</td><td>' + result[i].address_line_2 + '</td><td>' + result[i].inspection_type + '</td></tr>';
                     }
