@@ -62,24 +62,30 @@
         
       }
       function myList(res){
-        let ol = document.createElement("ol");
+        let ul = document.createElement("ul");
 
         for(let i = 0; i < res.length; i ++){
           
           let el = document.createElement("li");
           el.innerHTML = res[i];
-          ol.appendChild(el);
+          ul.appendChild(el);
 
         }
-        document.querySelector('.content_test').appendChild(ol);
+        document.querySelector('.content_test').appendChild(ul);
       }
       function loadOption(inputs){
         var data = document.getElementById("search");
         if (data.placeholder === "e.g. College Park"){
-          return loadDataCity(inputs);
+          if (inputs ===""){
+            alert('Please Enter A City')
+          }
+          else{loadDataCity(inputs)};
         } 
         if (data.placeholder === "e.g. 20740") {
-          return loadDataZip(inputs);
+          if(inputs===""){
+            alert('Please Enter A Zipcode')
+          }
+          else{loadDataZip(inputs)};
         }
       }
       function loadDataZip(inputs){
