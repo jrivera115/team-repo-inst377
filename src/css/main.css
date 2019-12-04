@@ -17,25 +17,7 @@ html {
  */
 body {
   margin: 0;
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read 
-    
-    Citation:
-    
-    Thanks to the owner of the photo
 
-    Title: RESTAURANT, ADAPTIVE REUSE, INTERIORS ARCHITECTURE STOCKHOLM, SWEDEN
-    Photographer: Mikael Axelsson
-    Architects: Richard Lindvall*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant.jpg"); /* */
-
-  /* Set a specific height */
-  height: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 /**
@@ -71,20 +53,7 @@ section {
   list-style-type: none;
   margin: 24px;
   padding: 10px;
-  vertical-align: text-top;  
-}
-.header-image {
- margin: 0%;
-}
-
-/* Place text in the middle of the image */
-.header-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  vertical-align: text-top;
 }
 
 .navigation {
@@ -188,7 +157,7 @@ input:checked + .slider:before {
 }
 
 .s003 {
-  min-height: 90vh;
+  min-height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -196,6 +165,17 @@ input:checked + .slider:before {
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Poppins', sans-serif;
+
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../restaurant.jpg");
+  /*Citation:
+
+    Thanks to the owner of the photo
+
+    Title: RESTAURANT, ADAPTIVE REUSE, INTERIORS ARCHITECTURE STOCKHOLM, SWEDEN
+    Photographer: Mikael Axelsson
+    Architects: Richard Lindvall*/
+
   background-size: cover;
   background-position: center center;
   padding: 15px;
@@ -271,14 +251,14 @@ input:checked + .slider:before {
 }
 
 .s003 form .inner-form .input-field.second-wrap {
-  width: 180px;
+  width: 250px;
   -ms-flex-positive: 1;
   flex-grow: 1;
   background: #000000;
 }
 
 .s003 form .inner-form .input-field.third-wrap {
-  width: 74px;
+  width: 90px;
   color: #000;
 }
 
@@ -301,6 +281,7 @@ input:checked + .slider:before {
   outline-color: black;
   font-weight: bold;
   width: 30px;
+  text-decoration:none;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search svg {
@@ -331,14 +312,14 @@ input:checked + .slider:before {
     height: 34px;
     margin-top: 500px;
   }
-  
+
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+
   /* The slider */
   .slider {
     position: absolute;
@@ -351,7 +332,7 @@ input:checked + .slider:before {
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   .slider:before {
     position: absolute;
     content: "";
@@ -363,26 +344,26 @@ input:checked + .slider:before {
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   input:checked + .slider {
     background-color: rgb(159, 161, 165);
   }
-  
+
   input:focus + .slider {
     box-shadow: 0 0 1px rgb(159, 161, 165);
   }
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
-  
+
   .slider.round:before {
     border-radius: 50%;
   }
