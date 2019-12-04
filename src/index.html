@@ -2,12 +2,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="HandheldFriendly" content="true">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" type = "text/css"/>
-    
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="navigation">
@@ -17,7 +15,7 @@
           <li><a href="#">Documentation</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
-      </nav>
+      
     </div>
     <div class="s003">
       <form>
@@ -27,14 +25,18 @@
         </div>
         <div class="inner-form">
           <div class="input-field second-wrap">
-              <input id="search" type="text" placeholder="e.g. College Park" > <!--use this input to filter the dataset-->
+            <input id="search" type="text" name = "inputs" placeholder="e.g. College Park" ""> <!--use this input to filter the dataset-->
           </div>
           <div class="input-field third-wrap">
-            <button class="btn-search" type="button" onclick="loadOption()"> <!--this line is not working when i use the loadOption()-->
+            <button class="btn-search" type="button" onclick="loadOption(document.getElementById('search').value)"> <!--this line is not working when i use the loadOption()-->
+
               <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
               </svg>
             </button>
+          </div>
+          <div class="input-field third-wrap">
+              <button class="btn-search" type="button"><a style="text-decoration:none" href="index.html">Reset</a></button>
           </div>
         </div>
       </form>
@@ -44,66 +46,75 @@
       </label>
     </div>
     <div class="content_test">
-      <p>answer is here</p>
+
     </div>
     <script>
+
       function changePlaceholder(){
-          var data = document.getElementById("search");
-          if (data.placeholder === "e.g. College Park"){
-            data.placeholder = "e.g. 20740";
-          } else {
-            data.placeholder = "e.g. College Park";
-            
-          }
-          console.log(data);
-          return data;
-      }
-      function loadOption(){
-          var data = document.getElementById("search");
-          if (data.placeholder === "e.g. College Park"){
-            loadDataCity();
-          } else {
-            loadDataZip();
-          }
-      }
-var input = Number(document.getElementById("input").value);
+        var data = document.getElementById("search");
+        if (data.placeholder === "e.g. College Park"){
+          data.placeholder = "e.g. 20740";
 
-      function loadDataZip(){
-        console.log('fetch'); // confirm code is running on click
-        fetch('/api')
-          .then(res => res.json())
-          .then(res => res.data.filter(c => c.zip === 20740))
-          .then(res => res.map(c => c.name))
-          .then(res => {
-            myList(res);
-            console.log(res); // logging step to check what we got
-            return res;
-          });
+        } else {
+          data.placeholder = "e.g. College Park";
+          
+        }
+        console.log(data);
+        return data;
+        
       }
+      function myList(res){
+        let ul = document.createElement("ul");
 
-        function loadDataCity() {
-        console.log('fetch'); // confirm code is running on click
-        fetch('/api')
-          .then(res => res.json())
-          .then(res => res.data.filter(c => c.city === "COLLEGE PARK"))
-          .then(res => res.map(c => c.name))
-          .then(res => {
-            myList(res);
-            console.log(res); // logging step to check what we got
-            return res;
-          });
+        for(let i = 0; i < res.length; i ++){
+          
+          let el = document.createElement("li");
+          el.innerHTML = res[i];
+          ul.appendChild(el);
+
+        }
+        document.querySelector('.content_test').appendChild(ul);
       }
-
-        function myList(res){
-          let ol = document.createElement("ol");
-          for(let i = 0; i < res.length; i ++){
-            
-            let el = document.createElement("li");
-            el.innerHTML = res[i];
-            ol.appendChild(el);
+      function loadOption(inputs){
+        var data = document.getElementById("search");
+        if (data.placeholder === "e.g. College Park"){
+          if (inputs ===""){
+            alert('Please Enter A City')
           }
-          document.querySelector('.content_test').appendChild(ol);
+          else{loadDataCity(inputs)};
+        } 
+        if (data.placeholder === "e.g. 20740") {
+          if(inputs===""){
+            alert('Please Enter A Zipcode')
+          }
+          else{loadDataZip(inputs)};
+        }
       }
+      function loadDataZip(inputs){
+      console.log('fetch'); // confirm code is running on click
+      fetch('/api')
+        .then(res => res.json())
+        .then(res => res.data.filter(c => c.zip === inputs)) //will need to know how to retrieve input from users and use it to filter the data
+        .then(res => res.map(c => c.name))
+        .then(res => {
+          myList(res);
+          console.log(res); // logging step to check what we got
+          return res;
+        });
+      }
+      function loadDataCity(inputs) {
+      console.log('fetch'); // confirm code is running on click
+      fetch('/api')
+        .then(res => res.json())
+        .then(res => res.data.filter(c => c.city === inputs.toUpperCase())) //will need to know how to retrieve input from users and use it to filter the data
+        .then(res => res.map(c => c.name))
+        .then(res => {
+          myList(res);
+          console.log(res); // logging step to check what we got
+          return res;
+        });
+      }
+      
     </script>
   </body>
 </html>

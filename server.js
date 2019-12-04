@@ -1,12 +1,14 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 /*
  * The 'express.static' middleware provides some services Express can use to
  * serve files from a directory - in this case, the 'public' subdirectory of
@@ -55,5 +57,6 @@ app.get('/api', (req, res) => {
       res.redirect('/error');
     });
 });
+
 
 app.listen(port, () => console.log(`Our app is running on https://safetyzone-demo.herokuapp.com/ and port: ${port}!`));
