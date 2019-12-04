@@ -21,7 +21,6 @@
       <form>
         <div class="form_head">
           <h1>SAFETY ZONE</h1>
-          <h6>A place to eat clean</h6>
         </div>
         <div class="inner-form">
           <div class="input-field second-wrap">
@@ -45,11 +44,13 @@
           <span class="slider round" onclick="changePlaceholder()" ></span>
       </label>
     </div>
+    <br>
     <div class="content_test">
-
+    </div>
+    <div class = "map_box">
+      
     </div>
     <script>
-
       function changePlaceholder(){
         var data = document.getElementById("search");
         if (data.placeholder === "e.g. College Park"){
@@ -63,6 +64,7 @@
         return data;
         
       }
+      //creating the list of the food facilities based on the users' input
       function myList(res){
         let ul = document.createElement("ul");
 
@@ -75,6 +77,7 @@
         }
         document.querySelector('.content_test').appendChild(ul);
       }
+      // this is the function that give option of how users can search food facilities based on city and zip code
       function loadOption(inputs){
         var data = document.getElementById("search");
         if (data.placeholder === "e.g. College Park"){
@@ -90,6 +93,7 @@
           else{loadDataZip(inputs)};
         }
       }
+      // load the food facilities list using the zip code
       function loadDataZip(inputs){
       console.log('fetch'); // confirm code is running on click
       fetch('/api')
@@ -102,6 +106,7 @@
           return res;
         });
       }
+      // load the food facilities list using the city
       function loadDataCity(inputs) {
       console.log('fetch'); // confirm code is running on click
       fetch('/api')

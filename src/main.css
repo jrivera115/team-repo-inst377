@@ -17,7 +17,18 @@ html {
  */
 body {
   margin: 0;
-  height: 100%;
+  height: 50%;
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /**
@@ -30,25 +41,31 @@ header,
 section {
   display: block;
 }
-.test_content li{
-  text-align: center;
-  position: absolute;
-  font-size: larger;
-  font-weight: bold;
-  margin: 30px;
+.map_box{
+  width: 50%;
+  background: grey;
+}
+
+/*This is for the list of the food facility*/
+.content_test{
+  margin: 0%;
+  background: transparent;
+  width: 45%;
+  padding: 40px 0;
+
+}
+.content_test li{
+  color: white;
+  background: black;
+  height: 50px;
+  font-size: 24px;
+  list-style-type: none;
+  margin: 24px;
+  padding: 10px;
+  vertical-align: text-top;  
 }
 .header-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant.jpeg");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+ margin: 0%;
 }
 
 /* Place text in the middle of the image */
@@ -62,10 +79,11 @@ section {
 }
 
 .navigation {
-margin: 0;
+  margin: 0;
 }
 
 .navigation ul {
+  height: 60px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -83,7 +101,7 @@ margin: 0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 24px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -102,7 +120,7 @@ margin: 0;
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin-top: 400px;
+  margin-top: 350px;
 }
 
 /* Hide default HTML checkbox */
@@ -161,7 +179,7 @@ input:checked + .slider:before {
 }
 
 .s003 {
-  min-height: 100vh;
+  min-height: 90vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -169,7 +187,6 @@ input:checked + .slider:before {
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Poppins', sans-serif;
-  background-image: url(restaurant.jpeg);
   background-size: cover;
   background-position: center center;
   padding: 15px;
@@ -196,6 +213,7 @@ input:checked + .slider:before {
   background: #fff;
   display: -ms-flexbox;
   display: flex;
+  height: 40%;
   width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -206,7 +224,8 @@ input:checked + .slider:before {
 }
 
 .s003 form .inner-form .input-field {
-  height: 68px;
+  height: 100px;
+  width: 100px;
 }
 
 .s003 form .inner-form .input-field input {
@@ -216,39 +235,42 @@ input:checked + .slider:before {
   display: block;
   width: 100%;
   padding: 10px 32px;
-  font-size: 16px;
-  color: #555;
+  font-size: 24px;
+  color: #ffffff;
   text-decoration-color: #ffffff;
 }
 
 .s003 form .inner-form .input-field input.placeholder {
-  color: #888;
+  color: #ffffff;
   font-size: 16px;
 }
 
 .s003 form .inner-form .input-field input:-moz-placeholder {
-  color: #888;
+  color:#ffffff;
   font-size: 16px;
 }
 
 .s003 form .inner-form .input-field input::-webkit-input-placeholder {
-  color: #888;
+  color: #ffffff;
   font-size: 16px;
 }
 
 .s003 form .inner-form .input-field input:hover, .s003 form .inner-form .input-field input:focus {
   box-shadow: none;
   outline: 0;
-  border-color: #fff;
+  border-color: #ffffff;
 }
 
 .s003 form .inner-form .input-field.second-wrap {
+  width: 180px;
   -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
+  background: #000000;
 }
 
 .s003 form .inner-form .input-field.third-wrap {
   width: 74px;
+  color: #000;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search {
@@ -256,9 +278,10 @@ input:checked + .slider:before {
   width: 100%;
   white-space: nowrap;
   color: #ffffff;
-  border: 3;
+  font-size: 24px;
+  border: 0;
   cursor: pointer;
-  background: #c9c9c9;
+  background: #000000;
   transition: all .2s ease-out, color .2s ease-out;
 }
 
@@ -271,7 +294,7 @@ input:checked + .slider:before {
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search svg {
-  width: 16px;
+  width: 24px;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search:hover {
@@ -385,3 +408,5 @@ input:checked + .slider:before {
     width: 100%;
   }
 }
+
+
