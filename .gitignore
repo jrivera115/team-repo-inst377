@@ -2,6 +2,7 @@
 =======
 .sass-cache/
 *.css.map
+build/
 
 # -------------------------------------------------
 # OS generated files
