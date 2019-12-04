@@ -17,12 +17,19 @@ html {
  */
 body {
   margin: 0;
-  height: 50%;
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant.jpg");
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read 
+    
+    Citation:
+    
+    Thanks to the owner of the photo
+
+    Title: RESTAURANT, ADAPTIVE REUSE, INTERIORS ARCHITECTURE STOCKHOLM, SWEDEN
+    Photographer: Mikael Axelsson
+    Architects: Richard Lindvall*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant.jpg"); /* */
 
   /* Set a specific height */
-  height: 50%;
+  height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -42,12 +49,14 @@ section {
   display: block;
 }
 .map_box{
+  font-family: 'Poppins', sans-serif;
   width: 50%;
   background: grey;
 }
 
 /*This is for the list of the food facility*/
 .content_test{
+  font-family: 'Poppins', sans-serif;
   margin: 0%;
   background: transparent;
   width: 45%;
@@ -291,10 +300,11 @@ input:checked + .slider:before {
   text-align: center;
   outline-color: black;
   font-weight: bold;
+  width: 30px;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search svg {
-  width: 24px;
+  width: 30px;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search:hover {
