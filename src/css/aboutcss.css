@@ -1,0 +1,122 @@
+.title {
+  text-align: center;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 150px;
+  font-family: 'Poppins';
+}
+
+.aboutheader {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Poppins';
+}
+
+body {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
+
+.ipheader h3 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #fdfbfb;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.solutionheader h3 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #fdfbfb;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Poppins';
+}
+
+.box1 {
+  width: 90%;
+  height: 175px;
+  background: #fdfbfb;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.box2 {
+  width: 90%;
+  height: 155px;
+  background: #fdfbfb;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.effect {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+p {
+  font-family: 'Poppins';
+  font-size: 13px;
+}
+
+/* Navigation template taken from Muhammad's Index CSS */
+
+.navigation {
+  margin: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: "Poppins";
+}
