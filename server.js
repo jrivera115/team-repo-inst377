@@ -30,12 +30,12 @@ app.get('/api', (req, res) => {
     });
 });
 
-app.post('/api', (req, res) => {
-  res.send('incoming POST request!');
+app.post('/api/post', (req, res) => {
+  res.send('Some PUT request!');
 });
 
-app.put('/api', (req, res) => {
-  res.send('incoming PUT request!');
+app.put('/api/put', (req, res) => {
+  res.send('Some PUT request!');
 });
 
 // eslint-disable-next-line max-len
