@@ -29,7 +29,7 @@
 
 body {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("src/background3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -132,4 +132,3 @@ p {
   font-size: 21px;
   font-family: "Poppins";
 }
-
