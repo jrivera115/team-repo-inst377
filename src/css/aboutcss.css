@@ -9,6 +9,8 @@
   margin-bottom: 0px;
   margin-top: 150px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 .aboutheader {
@@ -21,6 +23,8 @@
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -45,6 +49,8 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .solutionheader h3 {
@@ -60,26 +66,32 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 .box1 {
   width: 90%;
-  height: 175px;
+  height: 100%;
   background: #fdfbfb;
   margin: 40px auto;
   padding: 15px;
   border-radius: 20px;
   opacity: 0.9;
+  display: flex;
+  flex-direction: column;
 }
 
 .box2 {
   width: 90%;
-  height: 155px;
+  height: 100%;
   background: #fdfbfb;
   margin: 40px auto;
   padding: 15px;
   border-radius: 20px;
   opacity: 0.9;
+  display: flex;
+  flex-direction: column;
 }
 
 .effect {
@@ -92,6 +104,8 @@ p {
   font-family: 'Poppins';
   font-size: 13px;
 }
+
+/* Navigation template taken from Muhammad's Index CSS */
 
 .navigation {
   margin: 0;
