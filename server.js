@@ -18,7 +18,7 @@ app.use(express.static('src'));
 
 app.get('/api', (req, res) => {
   // eslint-disable-next-line max-len
-  const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json$$app_token=9KQOpcS5cOuViblS4ca1bkM4j';
+  const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
   fetch(baseURL)
     .then((r) => r.json())
     .then((r) => r.map((dataset) => dataset))
@@ -44,10 +44,6 @@ app.put('/api/put', (req, res) => {
   });
 });
 
-// create a token
-//app.post('/api/login', (req, res) => {
- // jwt.sign({ foo: 'bar' }, cert, { algorithm });
-//});
 
 // eslint-disable-next-line max-len
 app.listen(port, () => console.log(`Our app is running on https://safetyzone-demo.herokuapp.com/ and port: ${port}!`));
