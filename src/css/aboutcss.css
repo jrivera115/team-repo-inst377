@@ -72,7 +72,7 @@ body {
 
 .box1 {
   width: 90%;
-  height: 175px;
+  height: 100%;
   background: #fdfbfb;
   margin: 40px auto;
   padding: 15px;
@@ -84,7 +84,7 @@ body {
 
 .box2 {
   width: 90%;
-  height: 155px;
+  height: 100%;
   background: #fdfbfb;
   margin: 40px auto;
   padding: 15px;
