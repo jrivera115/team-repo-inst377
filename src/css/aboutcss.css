@@ -9,6 +9,8 @@
   margin-bottom: 0px;
   margin-top: 150px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 .aboutheader {
@@ -21,11 +23,13 @@
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 body {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../background3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -45,6 +49,8 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .solutionheader h3 {
@@ -60,6 +66,8 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 .box1 {
@@ -70,6 +78,8 @@ body {
   padding: 15px;
   border-radius: 20px;
   opacity: 0.9;
+  display: flex;
+  flex-direction: column;
 }
 
 .box2 {
@@ -80,6 +90,8 @@ body {
   padding: 15px;
   border-radius: 20px;
   opacity: 0.9;
+  display: flex;
+  flex-direction: column;
 }
 
 .effect {
@@ -92,6 +104,8 @@ p {
   font-family: 'Poppins';
   font-size: 13px;
 }
+
+/* Navigation template taken from Muhammad's Index CSS */
 
 .navigation {
   margin: 0;
@@ -118,3 +132,4 @@ p {
   font-size: 21px;
   font-family: "Poppins";
 }
+
