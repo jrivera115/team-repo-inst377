@@ -167,7 +167,7 @@ input:checked + .slider:before {
   font-family: 'Poppins', sans-serif;
 
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../restaurant.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../static/restaurant.jpg");
   /*Citation:
 
     Thanks to the owner of the photo
@@ -299,9 +299,18 @@ input:checked + .slider:before {
 
 
 @media screen and (max-width: 992px) {
+  .content_test{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    background: transparent;
+    width: 100%;
+    padding: 40px 0;
+  
+  }
   .s003 form .inner-form .input-field {
     height: 50px;
   }
+
 }
 
 @media screen and (max-width: 767px) {
