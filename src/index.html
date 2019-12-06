@@ -63,14 +63,14 @@
     </label>
   </div>
   <br>
-  <div class="content_test">
-  </div>
-  <div class="map_box">
-    
   
-    <div id="map" style="width: 50%; height: 400px;">
+  <div class="map_box">
+
+    <div id="map" style="width: 90%; height: 600px;">
 
     </div>
+  </div>
+  <div class="content_test">
   </div>
   <script>
     function changePlaceholder() {
@@ -130,7 +130,9 @@
       fetch('/api')
         .then(res => res.json())
         .then(res => res.data.filter(c => c.zip === inputs)) //will need to know how to retrieve input from users and use it to filter the data
-        .then(res => res.map(c => c.name))
+        .then(res => res.map(c => [c.name,"<hr>",
+                                  "Inspection Results: "+ c.inspection_results,
+                                  "Date: "+ c.inspection_date.substr(0,10)].join('<br/>')))
         .then(res => {
           myList(res);
           console.log(res); // logging step to check what we got
@@ -143,7 +145,9 @@
       fetch('/api')
         .then(res => res.json())
         .then(res => res.data.filter(c => c.city === inputs.toUpperCase())) //will need to know how to retrieve input from users and use it to filter the data
-        .then(res => res.map(c => c.name))
+        .then(res => res.map(c => [c.name,"<hr>",
+                                  "Inspection Results: "+ c.inspection_results,
+                                  "Date: "+ c.inspection_date.substr(0,10)].join('<br/>')))
         .then(res => {
           myList(res);
           console.log(res); // logging step to check what we got
@@ -159,7 +163,7 @@
         .then(res => res.json())
         .then(res => res.data.filter(c => c.city === inputs.toUpperCase() || c.zip === inputs)
         ) //will need to know how to retrieve input from users and use it to filter the data
-        .then(res => res.map(c => [c.geocoded_column_1,c.name]))
+        .then(res => res.map(c => [c.geocoded_column_1,c.name,[c.address_line_1,c.city,c.state,c.zip].join('<br/>')]))
         .then(res => {
           // myListMap(res);
           console.log(res); // logging step to check what we got
@@ -180,7 +184,7 @@
      // makes markers for each restaurant
 
       for (let i = 0; i < res.length; i++) {
-        marker = new L.marker(res[i][0]["coordinates"].reverse()).bindPopup(res[i][1]).addTo(mymap); //[res[i][0]["coordinates"][1], res[i][0]["coordinates"][0]]
+        marker = new L.marker(res[i][0]["coordinates"].reverse()).bindPopup([res[i][1],res[i][2]].join('<br/>')).addTo(mymap); //[res[i][0]["coordinates"][1], res[i][0]["coordinates"][0]]
       }
       return mymap;
     });
