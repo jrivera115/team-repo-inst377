@@ -33,7 +33,15 @@ section {
 .map_box{
   font-family: 'Poppins', sans-serif;
   width: 50%;
-  background: grey;
+  background: transparent;
+  position: relative;
+}
+
+.map_box#map{
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  background: transparent;
+  position: relative;
 }
 
 /*This is for the list of the food facility*/
