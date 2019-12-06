@@ -99,42 +99,6 @@
       document.querySelector('.content_test').appendChild(ul);
     }
 
-        // function myListMap(res) {
-        //     let ul = document.createElement("ul");
-
-        //     for (let i = 0; i < res.length; i++) {
-
-        //       let el = document.createElement("li");
-        //       el.innerHTML = res[i]["coordinates"][0];
-        //       ul.appendChild(el);
-
-        //     }
-        //     document.querySelector('.content_test').appendChild(ul);
-        //   }
-
-
-    // function myListMap(res) {
-    // var map = L.map("map_box").setView([38.83, -76.85], 15);
-    // L.tileLayer(
-    //   "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibXR1bmc4OCIsImEiOiJjazM5YmxmNXUwMDZ1M2pxcmtoeHh5OWx0In0.v3Sd-9s0tjXiAoRQ3tyzxQ",
-    //   {
-    //     attribution:
-    //       'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    //     maxZoom: 15,
-    //     id: "mapbox.streets"
-    //     //accessToken: "pk.eyJ1IjoibXR1bmc4OCIsImEiOiJjazM5YmxmNXUwMDZ1M2pxcmtoeHh5OWx0In0.v3Sd-9s0tjXiAoRQ3tyzxQ"
-    //   }
-    // ).addTo(map);
-
-
-    // for (var i = 0; i < res.length; i++) {
-    //   marker = new L.marker(res[i]["coordinates"][0], res[i]["coordinates"][1])
-    //     .bindPopup(res[i]["name"])
-    //     .addTo(map);
-    // }
-
-    // return map;
-    // }
 
     // this is the function that give option of how users can search food facilities based on city and zip code
     function loadOption(inputs) {
@@ -190,8 +154,9 @@
       console.log('fetch'); // confirm code is running on click
       fetch('/api')
         .then(res => res.json())
-        .then(res => res.data.filter(c => c.city === inputs.toUpperCase()) || c.zip === inputs) //will need to know how to retrieve input from users and use it to filter the data
-        .then(res => res.map(c => c.geocoded_column_1))
+        .then(res => res.data.filter(c => c.city === inputs.toUpperCase() || c.zip === inputs)
+        ) //will need to know how to retrieve input from users and use it to filter the data
+        .then(res => res.map(c => [c.geocoded_column_1,c.name]))
         .then(res => {
           // myListMap(res);
           console.log(res); // logging step to check what we got
@@ -208,22 +173,9 @@
         }
       ).addTo(mymap);
 
-      // var coordinates = new Array();
-
-      // for(let i = 0; i < res.length; i++) {
-      //   coordinates.push(res[i]["coordinates"]);
-      // }
-
-      // for(let i = 0; i < res.length; i++) {
-      //   marker = new L.marker([coordinates[i][1], coordinates[i][0]]).addTo(mymap)
-      // }
-
-      // return mymap;
-
-      
+   
       for (let i = 0; i < res.length; i++) {
-        marker = new L.marker([res[i]["coordinates"][1], res[i]["coordinates"][0]]).addTo(mymap);
-        // .bindPopup(res[i]);
+        marker = new L.marker(res[i][0]["coordinates"].reverse()).bindPopup(res[i][1]).addTo(mymap); //[res[i][0]["coordinates"][1], res[i][0]["coordinates"][0]]
       }
       return mymap;
     });
