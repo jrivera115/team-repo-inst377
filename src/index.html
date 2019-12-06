@@ -150,6 +150,8 @@
         });
     }
 
+    // loads map with markers of inputted city or zip code
+
     function loadMap(inputs) {
       console.log('fetch'); // confirm code is running on click
       fetch('/api')
@@ -161,7 +163,7 @@
           // myListMap(res);
           console.log(res); // logging step to check what we got
 
-      var mymap = L.map("map").setView([38.97, -76.85], 18);
+      var mymap = L.map("map").setView(res[0][0]["coordinates"].reverse(), 12); //setview based on a restaurant coordinate 
       L.tileLayer(
         "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibXR1bmc4OCIsImEiOiJjazM5YmxmNXUwMDZ1M2pxcmtoeHh5OWx0In0.v3Sd-9s0tjXiAoRQ3tyzxQ",
         {
@@ -173,7 +175,9 @@
         }
       ).addTo(mymap);
 
-   
+        
+     // makes markers for each restaurant
+
       for (let i = 0; i < res.length; i++) {
         marker = new L.marker(res[i][0]["coordinates"].reverse()).bindPopup(res[i][1]).addTo(mymap); //[res[i][0]["coordinates"][1], res[i][0]["coordinates"][0]]
       }
