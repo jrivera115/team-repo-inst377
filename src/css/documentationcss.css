@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("cup.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../static/cup.jpg");
   background-position: center;
   background-size: cover;
 }
