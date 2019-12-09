@@ -5,6 +5,7 @@ Many individuals are unaware of the potential health concerns that exist in rega
 Our application is designed to function on all contemporary desktop browsers, as well as on both iOS and Android devices.
 - Link to our page: https://safetyzone-demo.herokuapp.com/
 - [User Manual](https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md)
+- [Developer Manual](https://github.com/jrivera115/team-repo-inst377#developer-manual)
 - [Final Report](https://github.com/jrivera115/team-repo-inst377/blob/master/docs/final.md)
 
 ## Developer manual: 
