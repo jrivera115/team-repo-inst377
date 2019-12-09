@@ -27,7 +27,8 @@ Dependencies:
 
 Nodejs & npm 
   1. Download and install: https://nodejs.org/en/download/ 
-  2. Make a working directory for application, then type: npm init to create a package.json 
+  2. Make a working directory for the application, then create a package.json by entering this command on GitBash:
+    ``` npm init ```
   3. In your working directory: Type on command line or bash: npm install node-fetch –save 
     -Node-fetch is required for fetching APIs from a web page.
     -– save (should be a double - ) is to save it in your package.json as a dependency 
