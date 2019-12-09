@@ -1,4 +1,4 @@
-#Safety Zone
+# Safety Zone
 
 Many individuals are unaware of the potential health concerns that exist in regards to food served at various foodservice facilities. Because of this, there have been cases of mass food poisioning for multiple food service facilities, making it important to find a method to inform people of facility inspection results. This way, people will be able to make a decision as to what they want to eat as they consider previous inspection results. In hopes to inform these individuals, our application, Safety Zone, will bring about food safety awareness by generating food places that comply or fail to comply within a certain mile radius of the user's location. The application will begin by asking the user to input a Zip Code or City address. The input will be used to retrieve a colelction of sorted data that will reveal food services that are tagged with varying levels of food inspection compliance results. (Then, these user will be able to filter the inspection results by various categories)
 
@@ -6,11 +6,11 @@ Our application is designed to function on all contemporary desktop browsers, as
 
 https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md <Developer Manual (bottom half of your README.md)>
 
-##Developer manual:
+## Developer manual: 
 
 How to install application and all dependencies: 
 
-###Requirements: 
+### Requirements: 
 
 1. Windows: 
     - Requirement to install all dependencies: Git Bash (recommended) or Terminal/Command Prompt, and Github Desktop
@@ -18,7 +18,7 @@ How to install application and all dependencies:
 2. Mac: 
    - Github desktop or you can simply use your own bash
 
-###Dependencies:
+### Dependencies:
 
 Nodejs & npm 
   1. Download and install: https://nodejs.org/en/download/ 
