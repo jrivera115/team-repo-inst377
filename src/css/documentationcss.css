@@ -11,10 +11,12 @@
   margin-bottom: 0px;
   margin-top: 150px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../static/cup.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("cup.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -28,6 +30,8 @@ body {
   text-shadow: 5px 5px 4px #000000;
   margin-top: 0px;
   font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -39,7 +43,7 @@ p {
 
 .box1 {
   width: 50%;
-  height: 120px;
+  height: 100%;
   background: #fff;
   float: right;
   padding: 15px;
@@ -48,11 +52,14 @@ p {
   margin-right: 40px;
   margin-bottom: 100px;
   opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box2 {
   width: 50%;
-  height: 200px;
+  height: 100%;
   background: #fff;
   float: right;
   padding: 15px;
@@ -61,6 +68,8 @@ p {
   margin-right: 40px;
   margin-bottom: 100px;
   opacity: 0.9;
+  display: flex;
+  flex-direction: column;
 }
 
  /* 
@@ -122,6 +131,7 @@ p {
   display: inline-block;
   margin-left: 40px;
   border-radius: 20px;
+  flex-wrap: wrap;
 }
 
  /* 
