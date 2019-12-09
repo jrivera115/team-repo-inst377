@@ -16,10 +16,11 @@ Developer manual:
 How to install application and all dependencies: 
 
 Requirements: 
-  -Windows: 
+
+Windows: 
     -Requirement to install all dependencies: Git Bash (recommended) or Terminal/Command Prompt, and Github Desktop
         -Git Bash allows you to make seamless Git integrations and handle backend and file management in one environment 
-  -Mac: 
+Mac: 
    -Github desktop or you can simply use your own bash
 
 Dependencies:
