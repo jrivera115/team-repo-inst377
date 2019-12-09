@@ -1,9 +1,10 @@
-# [Safety Zone](https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md)
+# Safety Zone
 
 Many individuals are unaware of the potential health concerns that exist in regards to food served at various foodservice facilities. Because of this, there have been cases of mass food poisioning for multiple food service facilities, making it important to find a method to inform people of facility inspection results. This way, people will be able to make a decision as to what they want to eat as they consider previous inspection results. In hopes to inform these individuals, our application, Safety Zone, will bring about food safety awareness by generating food places that comply or fail to comply within a certain mile radius of the user's location. The application will begin by asking the user to input a Zip Code or City address. The input will be used to retrieve a colelction of sorted data that will reveal food services that are tagged with varying levels of food inspection compliance results. (Then, these user will be able to filter the inspection results by various categories)
 
 Our application is designed to function on all contemporary desktop browsers, as well as on both iOS and Android devices.
-
+[Our website: Safety Zone](https://safetyzone-demo.herokuapp.com/)
+[User Manual](https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md)
 
 ## Developer manual: 
 
@@ -39,11 +40,13 @@ Check if you have node and npm installed by doing:
       npm -v 
 ```
 
+
 ##### Express 
   1. In your directory, type on cmd/bash:
 ```
     npm install express –-save
 ```
+
 
 ##### Heroku CLI 
   1. Download Heroku. You can follow their instruction setup on: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up.
@@ -51,6 +54,7 @@ Check if you have node and npm installed by doing:
 3. For Heroku commands: `heroku`
 
 Instructions guide reference: https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku
+
 
 #### How to run your application on a server:
 1. Create a Procfile. Name it Procfile with no file extensions and write: web:node server.js (spaces might be important so be careful)
@@ -73,11 +77,14 @@ git push heroku master
 ``` npm start ``` 
 You can also install the npm package, `nodemon`. You can download it here: https://www.npmjs.com/package/nodemon
 
+
 #### How to run any tests you have written for your software:
 1. No tests written yet
 
+
 #### API we used for our server application
 1. https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
+
 
 #### Set of expectations around known bugs and a road-map for future development:
 1. Making it more mobile friendly 
