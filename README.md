@@ -19,7 +19,7 @@ Requirements:
 
 Windows: 
     - Requirement to install all dependencies: Git Bash (recommended) or Terminal/Command Prompt, and Github Desktop
-        - Git Bash allows you to make seamless Git integrations and handle backend and file management in one environment 
+    - Git Bash allows you to make seamless Git integrations and handle backend and file management in one environment
 Mac: 
    - Github desktop or you can simply use your own bash
 
