@@ -26,14 +26,19 @@ Nodejs & npm
   2. Make a working directory for the application, then create a package.json by entering this command on GitBash:
     - ``` npm init ```
   3. In your working directory, node-fetch is required for fetching APIs from a web page. Type on command line or bash: 
-  - ```npm install node-fetch –-save ```
-    -– save is to save it in your package.json as a dependency 
+   - ```npm install node-fetch –-save ```
+    -– save saves node-fetch in your package.json as a dependency 
     - Check if you have node and npm installed by doing:
-      ```node -v
-       npm -v ```
+      ```
+      node -v
+      npm -v 
+      ```
 
 Express 
-  1. In your directory: Type npm install express –save
+  1. In your directory, type 
+    ```
+    npm install express –-save
+    ```
 
 Heroku CLI 
   1. Download Heroku. You can follow their instruction setup on this [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up). 
