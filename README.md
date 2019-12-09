@@ -11,8 +11,10 @@ Many individuals are unaware of the potential health concerns that exist in rega
 In hopes to inform these individuals, our application, Safety Zone, will bring about food safety awareness by generating food places that comply or fail to comply within a certain mile radius of the user's location. The application will begin by asking the user to input a Zip Code or City name. The input will be used to retrieve a collection of sorted data that will reveal food services that are tagged with varying levels of food inspection compliance results. 
 
 <Link to the Heroku, Netlify, or Digital Ocean instance where your application can be used>
+https://safetyzone-demo.herokuapp.com/index.html
 
 <Description of target browsers (iOS? Android? Which ones?)>
+Our application is targeted towards all contemporary desktop browsers (Google Chrome, Firefox, and Safari).
 
 <Link to User Manual>
 https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md
