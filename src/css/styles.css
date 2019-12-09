@@ -184,6 +184,8 @@ input:checked + .slider:before {
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
   margin-top: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .s003 form .inner-form {
