@@ -25,7 +25,7 @@ Requirements:
 
 Dependencies:
 
-Nodejs & npm 
+1. Nodejs & npm 
   1. Download and install: https://nodejs.org/en/download/ 
   2. Make a working directory for application, then type: npm init to create a package.json 
   3. In your working directory: Type on command line or bash: npm install node-fetch –save 
@@ -35,7 +35,7 @@ Nodejs & npm
       1. node -v
       2. npm -v
 
-Express 
+2. Express 
   1. In your directory: Type npm install express –save
 
 Heroku CLI 
