@@ -45,47 +45,25 @@ p {
   width: 50%;
   height: 100%;
   background: #fff;
-  float: right;
+  margin: 40px auto;
   padding: 15px;
   border-radius: 20px;
   opacity: 0.9;
-  margin-right: 40px;
-  margin-bottom: 100px;
-  opacity: 0.9;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .box2 {
   width: 50%;
   height: 100%;
   background: #fff;
-  float: right;
+  margin: 40px auto;
   padding: 15px;
   border-radius: 20px;
-  opacity: 0.9;
-  margin-right: 40px;
-  margin-bottom: 100px;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
 }
-
- /* 
- .box3 {
-  width: 50%;
-  height: 250px;
-  background: #fff;
-  float: right;
-  padding: 15px;
-  border-radius: 20px;
-  opacity: 0.9;
-  margin-right: 40px;
-  margin-bottom: 100px;
-  opacity: 0.9;
-}
-*/
 
 .separator {
   margin-top: 100px;
@@ -95,52 +73,30 @@ p {
   margin-top: 100px;
 }
 
- /* 
-.separator3 {
-  margin-top: 100px;
-}
-*/
 
 #computer1 {
-  height: 280px;
-  width: 450px;
+  height: 300px;
+  width: 520px;
   border-radius: 20px;
 }
 
 #computer2 {
   height: 280px;
-  width: 450px;
+  width: 520px;
   border-radius: 20px;
 }
-
- /* 
-#computer3 {
-  height: 280px;
-  width: 450px;
-  border-radius: 20px;
-}
-*/
 
 .image1 {
-  display: inline-block;
-  margin-left: 40px;
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
 }
 
 .image2 {
-  display: inline-block;
-  margin-left: 40px;
-  border-radius: 20px;
-  flex-wrap: wrap;
-}
-
- /* 
-.image3 {
-  display: inline-block;
-  margin-left: 40px;
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
 }
-*/
 
 /* Navigation */
 
