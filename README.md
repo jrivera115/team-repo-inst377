@@ -1,14 +1,14 @@
-# Safety Zone
+# [Safety Zone](https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md)
 
 Many individuals are unaware of the potential health concerns that exist in regards to food served at various foodservice facilities. Because of this, there have been cases of mass food poisioning for multiple food service facilities, making it important to find a method to inform people of facility inspection results. This way, people will be able to make a decision as to what they want to eat as they consider previous inspection results. In hopes to inform these individuals, our application, Safety Zone, will bring about food safety awareness by generating food places that comply or fail to comply within a certain mile radius of the user's location. The application will begin by asking the user to input a Zip Code or City address. The input will be used to retrieve a colelction of sorted data that will reveal food services that are tagged with varying levels of food inspection compliance results. (Then, these user will be able to filter the inspection results by various categories)
 
 Our application is designed to function on all contemporary desktop browsers, as well as on both iOS and Android devices.
 
-https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md <Developer Manual (bottom half of your README.md)>
 
 ## Developer manual: 
 
 How to install application and all dependencies: 
+
 
 ### Requirements: 
 
@@ -17,25 +17,26 @@ How to install application and all dependencies:
         - Git Bash allows you to make seamless Git integrations and handle backend and file management in one environment
 2. Mac: 
    - Github desktop or you can simply use your own bash
+   
 
 ### Dependencies:
 
 Nodejs & npm 
   1. Download and install: https://nodejs.org/en/download/ 
   2. Make a working directory for the application, then create a package.json by entering this command on GitBash:
-    ``` npm init ```
-  3. In your working directory: Type on command line or bash: npm install node-fetch –save 
-    -Node-fetch is required for fetching APIs from a web page.
-    -– save (should be a double - ) is to save it in your package.json as a dependency 
-    -Check if you have node and npm installed by doing:
-      1. node -v
-      2. npm -v
+    - ``` npm init ```
+  3. In your working directory, node-fetch is required for fetching APIs from a web page. Type on command line or bash: 
+  - ```npm install node-fetch –-save ```
+    -– save is to save it in your package.json as a dependency 
+    - Check if you have node and npm installed by doing:
+      ```node -v
+       npm -v ```
 
 Express 
   1. In your directory: Type npm install express –save
 
 Heroku CLI 
-  1. Download Heroku here: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up. You can follow their instruction        setup on this link. 
+  1. Download Heroku. You can follow their instruction setup on this [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up). 
 
 Instructions guide reference: https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku
 
