@@ -27,7 +27,7 @@ How to install application and all dependencies:
   1. Download and install: https://nodejs.org/en/download/ 
   2. Make a working directory for the application, then create a package.json by entering this command on GitBash: 
   ```
-  npm init 
+    npm init 
   ```
   3. In your working directory, node-fetch is required for fetching APIs from a web page. Type on command line or bash: 
 ```
@@ -61,18 +61,18 @@ Instructions guide reference: https://scotch.io/tutorials/how-to-deploy-a-node-j
 1. Create a Procfile. Name it Procfile with no file extensions and write: web:node server.js (spaces might be important so be careful)
 2. Log in to Heroku by typing this on cmd/bash: 
 ```
-heroku login
+    heroku login
 ```
 
 3. Create a Heroku app: 
 ```
-heroku create
+    heroku create
 ```
 You can also do `heroku create <unique app name here>` to make your own unique app name
    
 4. To deploy your app, type: 
 ```
-git push heroku master
+    git push heroku master
 ```
 5. To deploy the app locally, type:
 ``` npm start ``` 
