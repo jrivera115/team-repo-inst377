@@ -13,4 +13,43 @@ In hopes to inform these individuals, our application, Safety Zone, will bring a
 https://github.com/jrivera115/team-repo-inst377/blob/master/docs/user.md
 <Developer Manual (bottom half of your README.md)>
 
-The audience of this document is future developers who will take over your system They know technical terms and have general knowledge about web applications, but do not have knowledge about your system design. You need to provide a technical document so that future developers can start setting up the application on their local machines, and keep working on the system development after you leave the team. Your Developer Manual covers: How to install your application and all dependencies How to run your application on a server How to run any tests you have written for your software The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do A clear set of expectations around known bugs and a road-map for future development.
+Developer manual:
+1.	How to install application and all dependencies:
+Requirements:
+  a.	Windows:
+    i.	Requirement to install all dependencies: Git Bash (recommended) or Terminal/Command Prompt, and Github Desktop 
+    1.	Git Bash allows you to make seamless Git integrations and handle backend and file management in one environment 
+  b.	Mac:
+    i.	Github desktop or you can simply use your own bash
+
+Dependencies:
+1.	Nodejs & npm 
+  a.	Download and install: https://nodejs.org/en/download/ 
+  b.	Make a working directory for application, then type: npm init to create a package.json 
+  c.	In your working directory: Type on command line or bash: npm install node-fetch –save
+    i.	Node-fetch is required for fetching APIs from a web page. 
+    ii.	– save (should be a double - ) is to save it in your package.json as a dependency
+    iii.	Check if you have node and npm installed by doing: 
+      1.	node -v
+      2.	npm -v
+2.	Express 
+  a.	In your directory: Type npm install express –save
+3.	Heroku CLI 
+  a.	Download Heroku here: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up. You can follow their instruction   
+      setup on this link. 
+
+Instructions guide reference: https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku
+2.	How to run your application on a server: 
+  a.	Create a Procfile. Name it Procfile with no extensions and write: web:node server.js (spaces might be important so be careful)
+  b.	Log in to Heroku by typing this on your shell: heroku login
+  c.	Create a Heroku remote repository by typing: heroku create 
+    i.	You can also do “heroku create <your app name here>“ to make your own unique app name
+  d.	To deploy your app type: git push heroku master
+3.	How to run any tests you have written for your software:
+  a.	No tests written yet
+4.	The API for your server application
+  a.	https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
+5.	Set of expectations around known bugs and a road-map for future development:
+  a.	Making it mobile friendly
+  b.	Potentially increasing scope of project, as currently only locations in Prince George’s County are shown
+  c.	Add more filters to program so that users can input their preferences
