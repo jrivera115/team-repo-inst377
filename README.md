@@ -21,35 +21,57 @@ How to install application and all dependencies:
 
 ### Dependencies:
 
-Nodejs & npm 
+##### Nodejs & npm 
   1. Download and install: https://nodejs.org/en/download/ 
-  2. Make a working directory for the application, then create a package.json by entering this command on GitBash:
-    - ``` npm init ```
+  2. Make a working directory for the application, then create a package.json by entering this command on GitBash: 
+  ```
+  npm init 
+  ```
   3. In your working directory, node-fetch is required for fetching APIs from a web page. Type on command line or bash: 
-   - ```npm install node-fetch –-save ```
-    -– save saves node-fetch in your package.json as a dependency 
-    - Check if you have node and npm installed by doing:
-      ```
+```
+    npm install node-fetch –-save 
+```
+>This saves node-fetch in your package.json as a dependency. 
+
+Check if you have node and npm installed by doing:
+```
       node -v
       npm -v 
-      ```
+```
 
-Express 
-  1. In your directory, type 
-    ```
+##### Express 
+  1. In your directory, type on cmd/bash:
+```
     npm install express –-save
-    ```
+```
 
-Heroku CLI 
-  1. Download Heroku. You can follow their instruction setup on this [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up). 
+##### Heroku CLI 
+  1. Download Heroku. You can follow their instruction setup on: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up.
+2. Check if you have Heroku downloaded: `heroku -v`
+3. For Heroku commands: `heroku`
 
 Instructions guide reference: https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku
 
-How to run your application on a server:
-1. Create a Procfile. Name it Procfile with no extensions and write: web:node server.js (spaces might be important so be careful)
-2. Log in to Heroku by typing this on your shell: heroku login
-3. Create a Heroku remote repository by typing: heroku create i. You can also do “heroku create “ to make your own unique app name
-4. To deploy your app type: git push heroku master
+#### How to run your application on a server:
+1. Create a Procfile. Name it Procfile with no file extensions and write: web:node server.js (spaces might be important so be careful)
+2. Log in to Heroku by typing this on cmd/bash: 
+```
+heroku login
+```
+
+3. Create a Heroku app: 
+```
+heroku create
+```
+>You can also do `heroku create <unique app name here>` to make your own unique app name
+   
+4. To deploy your app, type: 
+```
+git push heroku master
+```
+5. To deploy the app locally, type:
+``` npm start ``` 
+>You can also install the npm package, nodemon. You can download it here: https://www.npmjs.com/package/nodemon
 
 How to run any tests you have written for your software:
 1. No tests written yet
