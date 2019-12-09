@@ -76,7 +76,7 @@ You can also do `heroku create <unique app name here>` to make your own unique a
 ```
 5. To deploy the app locally, type:
 ``` npm start ``` 
-You can also install the npm package, `nodemon`. You can download it here: https://www.npmjs.com/package/nodemon
+You can also install the npm package, `nodemon`. The documentation is found on this link: https://www.npmjs.com/package/nodemon
 
 
 #### How to run any tests you have written for your software:
