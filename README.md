@@ -31,7 +31,7 @@ How to install application and all dependencies:
 ```
     npm install node-fetch –-save 
 ```
->This saves node-fetch in your package.json as a dependency. 
+`--save` saves node-fetch in your package.json as a dependency. 
 
 Check if you have node and npm installed by doing:
 ```
@@ -63,7 +63,7 @@ heroku login
 ```
 heroku create
 ```
->You can also do `heroku create <unique app name here>` to make your own unique app name
+You can also do `heroku create <unique app name here>` to make your own unique app name
    
 4. To deploy your app, type: 
 ```
@@ -71,15 +71,15 @@ git push heroku master
 ```
 5. To deploy the app locally, type:
 ``` npm start ``` 
->You can also install the npm package, nodemon. You can download it here: https://www.npmjs.com/package/nodemon
+You can also install the npm package, `nodemon`. You can download it here: https://www.npmjs.com/package/nodemon
 
-How to run any tests you have written for your software:
+#### How to run any tests you have written for your software:
 1. No tests written yet
 
-The API for your server application
+#### API we used for our server application
 1. https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
 
-Set of expectations around known bugs and a road-map for future development:
-1. Making it mobile friendly
+#### Set of expectations around known bugs and a road-map for future development:
+1. Making it more mobile friendly 
 2. Potentially increasing the scope of project, as currently only locations in Prince George’s County are used 
 3. Add more filters to the program so that users can input their preferences
