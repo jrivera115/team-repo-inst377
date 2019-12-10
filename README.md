@@ -86,22 +86,22 @@ You can also install the npm package, `nodemon`. The documentation is found on t
 #### API we used for our server application
 1. https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
 2. List of functions we created
-    - Function `myList`
+    - Function `myList(res)`
         - Creates list of food facilities based on user input
         - Parameters: res (the data)  
         - Outputs list of food facilities and the list will automatically updated once a new search is performed.
 
-    - Function `loadOption`
+    - Function `loadOption(inputs)`
         - Allows user to choose between searching by city name or zip code
         - Parameters: inputs (the value of the user input)
         - Outputs list of food facilities in area searched as well as map, unless nothing was inputted, in which case it outputs “Please  Enter a City or Zipcode”
 
-    - Function `loadData`
+    - Function `loadData(inputs)`
         - Loads food facilities list corresponding to chosen zip code or city
         - Parameters: inputs (the value of the user input)
         - Outputs list of food facilities with the corresponding zip code or city, as well as result of most recent food inspection and its date
 
-    - Function `loadMap`
+    - Function `loadMap(inputs)`
         - Loads map with markers of inputted city or zip code
         - Parameters: inputs (the value of the user input)
         - Outputs a map with markers corresponding with each facility located in the inputted city or zip code. The marker also shows the address of the facilities when its clicked. If the user inputs another city or zip code, then the container empties the id of the HTM, so the map gets updated accordingly. Also to use mapbox, we needed to get an access token from the map box website.
