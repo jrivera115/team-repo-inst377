@@ -105,6 +105,10 @@ p {
   font-size: 13px;
 }
 
+.team {
+  text-align: center;
+}
+
 /* Navigation template taken from Muhammad's Index CSS */
 
 .navigation {
