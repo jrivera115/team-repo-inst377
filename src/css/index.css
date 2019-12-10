@@ -140,7 +140,7 @@ input:checked + .slider:before {
 .s003 form {
   width: 100%;
   max-width: 790px;
-  margin-bottom: 0;
+  margin-bottom: 100px;
 }
 
 .s003 form .form_head{
@@ -151,7 +151,7 @@ input:checked + .slider:before {
   color: #ffffff;
   text-shadow: 5px 5px 4px #000000;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 150px;
 }
 
 .s003 form .inner-form {
