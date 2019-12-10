@@ -126,3 +126,8 @@ p {
   font-size: 21px;
   font-family: "Poppins", sans-serif;
 }
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+  background-color: #111;
+}
