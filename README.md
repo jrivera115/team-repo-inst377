@@ -40,6 +40,7 @@ Check if you have node and npm installed by doing:
       node -v
       npm -v 
 ```
+[NPM documentation](https://docs.npmjs.com/)
 
 
 ##### Express 
@@ -47,7 +48,13 @@ Check if you have node and npm installed by doing:
 ```
     npm install express –-save
 ```
-
+  2. To use the POST request install bodyParser. In your directory, type on cmd/bash:
+```
+    npm install –-save body-parser
+```
+  
+[Express documentation](https://expressjs.com/)
+POST installation guide reference: https://codeforgeek.com/handle-get-post-request-express-4/
 
 ##### Heroku CLI 
   1. Download Heroku. You can follow their instruction setup on: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up.
@@ -85,7 +92,8 @@ You can also install the npm package, `nodemon`. The documentation is found on t
 
 #### API we used for our server application
 1. https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
-2. List of functions we created
+2. [Leaflet](https://leafletjs.com/)
+3. List of functions we created on the front end:
     - Function `myList(res)`
         - Creates list of food facilities based on user input
         - Parameters: res (the data)  
@@ -105,6 +113,24 @@ You can also install the npm package, `nodemon`. The documentation is found on t
         - Loads map with markers of inputted city or zip code
         - Parameters: inputs (the value of the user input)
         - Outputs a map with markers corresponding with each facility located in the inputted city or zip code. The marker also shows the address of the facilities when its clicked. If the user inputs another city or zip code, then the container empties the id of the HTM, so the map gets updated accordingly. Also to use mapbox, we needed to get an access token from the map box website.
+
+4. API end points on server.js:
+> These end points were tested on Postman. Status: 200 OK.
+
+    - `app.get`
+        - GET request
+        - See [Express API](https://expressjs.com/en/4x/api.html) for detailed information
+        - Gets the data from the Prince George's County Maryland Data website
+
+    - `app.post`
+        - POST request
+        - See [Express API](https://expressjs.com/en/4x/api.html) for detailed information
+        - This does not work. Only outputs a json formatted message.
+
+    - `app.put`
+        - PUT request
+        - See [Express API](https://expressjs.com/en/4x/api.html) for detailed information
+        - This does not work. Only outputs a json formatted message.
 
 
 
