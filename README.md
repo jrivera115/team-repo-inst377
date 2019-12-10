@@ -115,7 +115,6 @@ You can also install the npm package, `nodemon`. The documentation is found on t
         - Outputs a map with markers corresponding with each facility located in the inputted city or zip code. The marker also shows the address of the facilities when its clicked. If the user inputs another city or zip code, then the container empties the id of the HTM, so the map gets updated accordingly. Also to use mapbox, we needed to get an access token from the map box website.
 
 4. API end points on server.js:
-These end points were tested on Postman. Status: 200 OK.
 
     - `app.get`
         - GET request
@@ -131,7 +130,7 @@ These end points were tested on Postman. Status: 200 OK.
         - PUT request
         - See [Express API](https://expressjs.com/en/4x/api.html) for detailed information
         - This does not work. Only outputs a json formatted message.
-
+These end points were tested on Postman. Status: 200 OK.
 
 
 #### Set of expectations around known bugs and a road-map for future development:
