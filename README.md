@@ -109,6 +109,6 @@ You can also install the npm package, `nodemon`. The documentation is found on t
 
 
 #### Set of expectations around known bugs and a road-map for future development:
-1. Making it more mobile friendly 
+1. Making it more mobile friendly (Currently does not format correctly on mobile devices, although functionality is still present)
 2. Potentially increasing the scope of project, as currently only locations in Prince George’s County are used 
 3. Add more filters to the program so that users can input their preferences
