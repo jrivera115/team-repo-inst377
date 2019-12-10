@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""></script>
-    <script src = "js/scripts.js"></script>
+    <script src = "js/script.js"></script>
 
   </head>
 
@@ -38,12 +38,10 @@
         <div class="inner-form">
           <div class="input-field second-wrap">
             <input id="search" type="text" name="inputs" placeholder="Enter a city or zip code" >
-            <!--use this input to filter the dataset-->
           </div>
           <div class="input-field third-wrap">
-          <!--html has no idea what document.getelement-->
-            <button class="btn-search" type="button" onclick="loadOption(document.getElementById('search').value)">
-              <!--this line is not working when i use the loadOption()-->
+
+            <button class="btn-search" type="button" onclick="loadOption()">
 
               <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search"
                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -53,22 +51,18 @@
               </svg>
             </button>
           </div>
-          <!-- <div class="input-field third-wrap">
-            <button class="btn-search" type="button" onclick="changePlaceholder()">Zip</button>
-          </div> -->
         
         </div>
       </form>
     </div>
     <br>
-    
+
     <div class="map_box">
-      <!--Leaflet says to have instyle here-->
+      <!--Leaflet says to have inline style here-->
       <div id="map" style="width: 90%; height: 600px;"></div>
     </div>
     <div class="content_test">
     </div>
-
   </body>
 
 </html>

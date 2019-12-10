@@ -316,7 +316,7 @@ input:checked + .slider:before {
     background: transparent;
     width: 100%;
     padding: 40px 0;
-  
+
   }
   .s003 form .inner-form .input-field {
     height: 50px;
