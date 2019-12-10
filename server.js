@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static('src'));
+app.use(express.static('public'));
 
 app.get('/api', (req, res) => {
   // eslint-disable-next-line max-len

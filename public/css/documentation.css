@@ -1,0 +1,133 @@
+/* Taken from https://www.bypeople.com/css-box-shadow-effects/ */
+
+.title {
+  text-align: center;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 150px;
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../static/cup.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.documentationheader {
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  position: relative;
+  font-family: 'Poppins';
+  font-size: 13px;
+}
+
+.box1 {
+  width: 85%;
+  height: 100%;
+  background: #fff;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+.box2 {
+  width: 85%;
+  height: 100%;
+  background: #fff;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+.separator {
+  margin-top: 100px;
+}
+
+.separator2 {
+  margin-top: 100px;
+}
+
+
+#computer1 {
+  height: 300px;
+  width: 520px;
+  border-radius: 20px;
+}
+
+#computer2 {
+  height: 280px;
+  width: 520px;
+  border-radius: 20px;
+}
+
+.image1 {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.image2 {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+/* Navigation */
+
+.navigation {
+  margin: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+  background-color: #111;
+}

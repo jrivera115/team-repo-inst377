@@ -1,0 +1,366 @@
+/*This templates was made by Colorlib (https://colorlib.com)*/
+
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 90%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+section {
+  display: block;
+}
+.map_box{
+  margin-top: 60px;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  background: transparent;
+  position: relative;
+  float: right;
+}
+
+.map_box li{
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  border: 30px solid black;
+  
+}
+
+/*This is for the list of the food facility*/
+.content_test{
+  font-family: 'Poppins', sans-serif;
+  margin: 0%;
+  background: transparent;
+  width: 50%;
+  padding: 40px 0;
+
+}
+.content_test li{
+  color:black;
+  background: white;
+  height: 21%;
+  font-size: 21px;
+  list-style-type: none;
+  margin: 30px;
+  padding: 2%;
+  vertical-align: text-top;
+  border: 4px solid black;
+}
+
+.navigation {
+  margin: 0;
+}
+
+.navigation ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+  background-color: #111;
+}
+
+
+input:checked + .slider {
+  background-color: rgb(159, 161, 165);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(159, 161, 165);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.s003 {
+  min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../static/restaurant.jpg");
+  /*Citation:
+    Thanks to the owner of the photo
+    Title: RESTAURANT, ADAPTIVE REUSE, INTERIORS ARCHITECTURE STOCKHOLM, SWEDEN
+    Photographer: Mikael Axelsson
+    Architects: Richard Lindvall*/
+
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+}
+
+.s003 form {
+  width: 100%;
+  max-width: 790px;
+  margin-bottom: 100px;
+}
+
+.s003 form .form_head{
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px #000000;
+  margin-bottom: 0px;
+  margin-top: 150px;
+}
+
+.s003 form .inner-form {
+  background: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40%;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.s003 form .inner-form .input-field {
+  height: 100px;
+  width: 100px;
+}
+
+.s003 form .inner-form .input-field input {
+  height: 100%;
+  background: transparent;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 32px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+.s003 form .inner-form .input-field input.placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.s003 form .inner-form .input-field input:-moz-placeholder {
+  color:#ffffff;
+  font-size: 16px;
+}
+
+.s003 form .inner-form .input-field input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.s003 form .inner-form .input-field input:hover, .s003 form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+  border-color: #ffffff;
+}
+
+.s003 form .inner-form .input-field.second-wrap {
+  width: 250px;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background: #000000;
+}
+
+.s003 form .inner-form .input-field.third-wrap {
+  width: 90px;
+  color: #000;
+}
+
+.s003 form .inner-form .input-field.third-wrap .btn-search {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 24px;
+  border: 0;
+  cursor: pointer;
+  background: #000000;
+  transition: all .2s ease-out, color .2s ease-out;
+}
+
+.s003 form .inner-form .input-field.third-wrap .btn-search a{
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  outline-color: black;
+  font-weight: bold;
+  width: 30px;
+  text-decoration:none;
+}
+
+.s003 form .inner-form .input-field.third-wrap .btn-search svg {
+  width: 30px;
+}
+
+.s003 form .inner-form .input-field.third-wrap .btn-search:hover {
+  background: #92928f;
+}
+
+.s003 form .inner-form .input-field.third-wrap .btn-search:focus {
+  outline: 3;
+  box-shadow: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  .content_test{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    background: transparent;
+    width: 100%;
+    padding: 40px 0;
+  
+  }
+  .s003 form .inner-form .input-field {
+    height: 50px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+    margin-top: 500px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -60;
+    right: 55;
+    bottom: 0;
+    background-color: rgb(88, 88, 88);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: rgb(159, 161, 165);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(159, 161, 165);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .s003 form .inner-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .s003 form .inner-form .input-field {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .s003 form .inner-form .input-field input {
+    padding: 10px 15px;
+  }
+  .s003 form .inner-form .input-field.first-wrap {
+    width: 100%;
+    border-right: 0;
+  }
+  .s003 form .inner-form .input-field.first-wrap .choices__inner {
+    padding: 10px 15px;
+  }
+  .s003 form .inner-form .input-field.second-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .s003 form .inner-form .input-field.second-wrap input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .s003 form .inner-form .input-field.third-wrap {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
