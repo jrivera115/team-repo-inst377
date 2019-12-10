@@ -1,6 +1,4 @@
 Safety Zone is an application that allows users to access food inspection results for food service facilities in a specific area.
-First, users can choose in the search bar whether to input a zip code or a city name by toggling a switch. After inputting either 
+First, users can choose in the search bar whether to input a zip code or a city name. After inputting either 
 a zip code or a city name, they can press the search button to search for food service facilities in that area. The results page will
-include three components. The first is a map of the area selected, with the locations of the food service facilities identified on it.
-The second is a list of all the food service facilities with basic information about them. The third is a list of the food inspection
-results for each of these locations, including if they passed the inspection and if not, why they failed.
+include a map with markers indicating the location of all food service facilities in the chosen area, as well as a display containing the names of said facilities as well as their most recent food inspection and the results of it.
