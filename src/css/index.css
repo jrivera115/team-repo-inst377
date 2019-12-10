@@ -180,9 +180,7 @@ input:checked + .slider:before {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../static/restaurant.jpg");
   /*Citation:
-
     Thanks to the owner of the photo
-
     Title: RESTAURANT, ADAPTIVE REUSE, INTERIORS ARCHITECTURE STOCKHOLM, SWEDEN
     Photographer: Mikael Axelsson
     Architects: Richard Lindvall*/
@@ -316,7 +314,7 @@ input:checked + .slider:before {
     background: transparent;
     width: 100%;
     padding: 40px 0;
-
+  
   }
   .s003 form .inner-form .input-field {
     height: 50px;
@@ -419,5 +417,3 @@ input:checked + .slider:before {
     width: 100%;
   }
 }
-
-
